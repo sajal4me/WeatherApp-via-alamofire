@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="476-NY-lRI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Current Weather View Controller-->
+        <scene sceneID="3jc-K4-22D">
+            <objects>
+                <viewController id="476-NY-lRI" customClass="CurrentWeatherViewController" customModule="Alamofire_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gNW-93-fGC"/>
+                        <viewControllerLayoutGuide type="bottom" id="utB-Na-0KF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HZZ-YP-9ml">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="huh-z0-LO5">
+                                <rect key="frame" x="171" y="28" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="sqD-90-1OR"/>
+                                    <constraint firstAttribute="height" constant="32" id="zw5-RY-8wv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los Angeles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQG-Lu-PVo">
+                                <rect key="frame" x="16" y="180" width="343" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="58" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63h-sa-KTj">
+                                <rect key="frame" x="141.5" y="209" width="91.5" height="96"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAHRENHEIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJn-nx-LQH">
+                                <rect key="frame" x="136" y="326" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="IZf-61-DtG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="huh-z0-LO5" firstAttribute="top" secondItem="gNW-93-fGC" secondAttribute="bottom" constant="8" id="3wY-xg-GOD"/>
+                            <constraint firstItem="IZf-61-DtG" firstAttribute="leading" secondItem="HZZ-YP-9ml" secondAttribute="leading" id="7ba-Re-cCD"/>
+                            <constraint firstItem="JQG-Lu-PVo" firstAttribute="leading" secondItem="HZZ-YP-9ml" secondAttribute="leading" constant="16" id="BBa-ux-fGu"/>
+                            <constraint firstItem="huh-z0-LO5" firstAttribute="centerX" secondItem="HZZ-YP-9ml" secondAttribute="centerX" id="EiT-eI-2cS"/>
+                            <constraint firstItem="IZf-61-DtG" firstAttribute="top" secondItem="HZZ-YP-9ml" secondAttribute="top" id="U0E-Ht-JpM"/>
+                            <constraint firstItem="JQG-Lu-PVo" firstAttribute="top" secondItem="gNW-93-fGC" secondAttribute="bottom" constant="160" id="UEY-cI-xLU"/>
+                            <constraint firstItem="63h-sa-KTj" firstAttribute="centerX" secondItem="HZZ-YP-9ml" secondAttribute="centerX" id="c8i-G0-YQ5"/>
+                            <constraint firstAttribute="trailing" secondItem="IZf-61-DtG" secondAttribute="trailing" id="hwE-BJ-Nbf"/>
+                            <constraint firstAttribute="trailing" secondItem="JQG-Lu-PVo" secondAttribute="trailing" constant="16" id="qda-DA-vkd"/>
+                            <constraint firstItem="63h-sa-KTj" firstAttribute="top" secondItem="JQG-Lu-PVo" secondAttribute="bottom" constant="8" id="vM2-rB-R9P"/>
+                            <constraint firstItem="utB-Na-0KF" firstAttribute="top" secondItem="IZf-61-DtG" secondAttribute="bottom" id="wZF-lE-KEc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="IZf-61-DtG" id="0w9-Ob-L4I"/>
+                        <outlet property="cityTextLabel" destination="JQG-Lu-PVo" id="xp7-Ld-IGZ"/>
+                        <outlet property="temperatureLabel" destination="63h-sa-KTj" id="nrz-Rg-x4P"/>
+                        <outlet property="temperatureScaleLabel" destination="fJn-nx-LQH" id="3wm-Xs-OE3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v0d-5b-5CR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="95.802098950524751"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1600" height="1067"/>
+        <image name="logo" width="210" height="237"/>
+    </resources>
+</document>
